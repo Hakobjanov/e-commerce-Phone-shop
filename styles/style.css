@@ -1420,3 +1420,159 @@ span.dot::before {
     bottom: -8%;
   }
 }
+
+/*news section styles*/
+.news__container {
+  margin-top: 5rem;
+}
+
+.news {
+  padding-bottom: 8rem;
+}
+
+.new__card {
+  background-color: var(--primaryColor);
+  width: 95%;
+  margin: 0 auto;
+}
+
+.new__card:not(:last-child) {
+  margin-right: 1rem;
+}
+
+.card__footer {
+  padding: 3rem 1.4rem;
+}
+
+.card__footer h3 {
+  font-size: 2.5rem;
+  font-weight: 600;
+  color: var(--black);
+  margin-bottom: 1rem;
+}
+
+.card__footer span {
+  display: inline-block;
+  margin-bottom: 1rem;
+  color: var(--black2);
+}
+
+.card__footer p {
+  font-size: 1.5rem;
+  color: var(--black2);
+  margin-bottom: 1.6rem;
+  line-height: 2.7rem;
+}
+
+.card__footer a:link,
+.card__footer a:visited {
+  display: inline-block;
+  padding: 1.4rem 4rem;
+  border: 1px solid var(--black);
+  color: var(--black);
+  transition: all 0.3s;
+}
+
+.card__footer a:hover {
+  border: 1px solid var(--black);
+  color: var(--white);
+  background-color: var(--black);
+}
+
+/*newsletter section styles*/
+.newsletter {
+  padding: 6rem 0;
+  border-top: 1px solid var(--primaryColor);
+}
+
+.newsletter__content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.newsletter__data h3 {
+  font-size: 2.4rem;
+  font-weight: inherit;
+  margin-bottom: 1rem;
+}
+
+.newsletter__data p {
+  font-size: 1.5rem;
+  color: var(--black);
+}
+
+.newsletter_email {
+  font-size: 1.4rem;
+  display: inline-block;
+  width: 37rem;
+  padding: 1.6rem;
+  background-color: var(--primaryColor);
+  border: none;
+  text-indent: 1rem;
+}
+
+.newsletter__email:focus {
+  outline: none;
+}
+
+.newsletter__link:link,
+.newsletter__link:visited {
+  display: inline-block;
+  padding: 1.4rem 3rem;
+  margin-left: -0.5rem;
+  background-color: var(--black);
+  color: var(--white);
+  transition: 0.3s;
+}
+
+.newsletter__link:hover {
+  background-color: #000;
+}
+
+/*newsletter media query*/
+@media only screen and (max-width: 999px) {
+  .newsletter {
+    padding: 6rem 4rme;
+  }
+
+  .newsletter__content {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .newsletter__email {
+    width: 45rem;
+  }
+
+  .newsletter__data {
+    margin-bottom: 2rem;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .newsletter__content {
+    justify-content: center;
+    text-align: center;
+  }
+
+  .newsletter__email {
+    display: block;
+    margin-bottom: 1.6rem;
+  }
+
+  .newsletter__data h3 {
+    font-size: 1.6rem;
+  }
+
+  .newsletter__data p {
+    font-size: 1rem;
+  }
+
+  .newsletter__link:link,
+  .newsletter__link:visited {
+    padding: 1.2rem 2rem;
+    margin-left: 0;
+    margin-top: 1.5rem;
+  }
+}

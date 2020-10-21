@@ -25,6 +25,7 @@ navClose.addEventListener("click", () => {
 const slider1 = document.querySelector("#glide_1");
 const slider2 = document.querySelector("#glide_2");
 const slider3 = document.querySelector("#glide_3");
+const slider4 = document.querySelector("#glide_4");
 
 if (slider1) {
   new Glide(slider1, {
@@ -66,6 +67,26 @@ if (slider3) {
     perView: 1,
     animationDuration: 800,
     animationTimingFunc: "ease-in-out",
+  }).mount();
+}
+
+if (slider4) {
+  new Glide(slider4, {
+    type: "carousel",
+    startAt: 0,
+    hoverpause: true,
+    autoplay: 2000,
+    perView: 3,
+    animationDuration: 800,
+    animationTimingFunc: "ease-in-out",
+    breakpoints: {
+      998: {
+        perView: 2,
+      },
+      768: {
+        perView: 1,
+      },
+    },
   }).mount();
 }
 
