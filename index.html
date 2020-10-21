@@ -3,11 +3,13 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Fonts -->
     <link
       href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;500;700&display=swap"
       rel="stylesheet"
     />
     <link rel="shortcut icon" href="./images/favicon.ico" type="image/x-icon" />
+    <!-- Glide Slider Styles -->
     <link
       rel="stylesheet"
       href="node_modules/@glidejs/glide/dist/css/glide.core.min.css"
@@ -16,11 +18,14 @@
       rel="stylesheet"
       href="node_modules/@glidejs/glide/dist/css/glide.theme.min.css"
     />
+    <!-- AOS animation -->
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <!--Stylesheet-->
     <link rel="stylesheet" href="styles/style.css" />
     <title>Buy-A-Phone</title>
   </head>
   <body>
+    <!-- Header -->
     <header id="header" class="header">
       <div class="navigation">
         <div class="container">
@@ -159,11 +164,12 @@
       </div>
     </header>
 
+    <!-- Main -->
     <main id="main">
+      <div class="container">
       <!-- Collection -->
       <section id="collection" class="section collection">
-        <div class="container">
-          <div class="collection__container">
+          <div class="collection__container" data-aos="fade-up" data-aos-duration="1200">
             <div class="collection__box">
               <div class="img__container">
                 <img
@@ -202,7 +208,7 @@
       </section>
 
       <!-- Latest products -->
-      <div class="container">
+      <div class="container" data-aos="fade-up" data-aos-duration="1200">
         <section class="section latest__products" id="latest">
           <div class="title__container">
             <div class="section__title active" data-id="Latest Products">
@@ -1000,7 +1006,7 @@
               </div>
             </div>
 
-            <div class="category__container">
+            <div class="category__container" data-aos="fade-up" data-aos-duration="1200">
               <div class="category__center"></div>
             </div>
           </div>
@@ -1010,7 +1016,7 @@
         <!-- Facility section -->
         <section class="facility__section section" id="facility">
           <div class="container">
-            <div class="facility__container">
+            <div class="facility__container" data-aos="fade-up" data-aos-duration="1200">
 
               <div class="facility__box">
                 <div class="facility-img__container">
@@ -1131,7 +1137,7 @@
               </div>
             </div>
 
-            <div class="news__container">
+            <div class="news__container" data-aos="fade-up" data-aos-duration="1200">
               <div class="glide" id="glide_4">
                 <div class="glide__track" data-glide-el="track">
                   <ul class="glide__slides">
@@ -1214,7 +1220,7 @@
         </div>
 
         <!-- NewsLetter section -->
-        <section class="newsletter section" id="contact">
+        <section class="newsletter section">
           <div class="container">
             <div class="newsletter__content">
               <div class="newsletter__data">
@@ -1231,6 +1237,7 @@
 
     </main>
 
+    <!-- Footer -->
     <footer id="footer" class="footer">
       <div class="container">
         <div class="footer-top">
@@ -1344,8 +1351,11 @@
       </svg>
     </a>
 
+    <!-- Glide Slider Script -->
     <script src="node_modules/@glidejs/glide/dist/glide.min.js"></script>
+    <!-- AOS Animation Script -->
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <!-- Script -->
     <script src="./js/slider.js"></script>
     <script src="./js/products.js"></script>
     <script src="./js/index.js"></script>
