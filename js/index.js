@@ -24,6 +24,7 @@ navClose.addEventListener("click", () => {
 //glide js
 const slider1 = document.querySelector("#glide_1");
 const slider2 = document.querySelector("#glide_2");
+const slider3 = document.querySelector("#glide_3");
 
 if (slider1) {
   new Glide(slider1, {
@@ -54,6 +55,17 @@ if (slider2) {
         perView: 2,
       },
     },
+  }).mount();
+}
+
+if (slider3) {
+  new Glide(slider3, {
+    type: "carousel",
+    startAt: 0,
+    hoverpause: true,
+    perView: 1,
+    animationDuration: 800,
+    animationTimingFunc: "ease-in-out",
   }).mount();
 }
 
