@@ -147,6 +147,6 @@ window.addEventListener("scroll", (e) => {
   if (scrollHeight > 300) {
     gotoTop.classList.add("show-top");
   } else {
-    gotoTop.classList.rmeove("show-top");
+    gotoTop.classList.remove("show-top");
   }
 });
